@@ -1,3 +1,74 @@
+#### **ACTIVIDAD_1.1**
+
+## ==**¿Qué espera aprender de la materia?**==
+
+Que mi conocimiento aumente y aprender sobre los temas que veremos y mas sobre el uso de la IA saber como aplicarla de manera correcta y otras cosas.
+
+
+## ==**¿Qué considera usted que es un sistema inteligente?**==
+
+Uso de la tecnología ya sea en la vida cotidiana como el internet el uso de la IA, computadoras y otras cosas, me hace pensar en el videojuego detroit become human sobre  como algunos sistemas inteligentes pueden ser autónomos y su manera de procesar los datos. 
+
+
+
+_____________________________________________________
+Con métricas de tarea, no con jueces humanos generalistas.
+
+- Clasificación.: exactitud, preciso, recuerdo y F1, según que error cueste mas caro
+- Regresión: error cuadrático medio, error absoluto medio
+- Conjuntos de referencia públicos que permiten comparar sistemas entre si
+- Evaluación separada del entrenamiento, para que el resultado sea honesto
+
+Pregunta Examen
+
+La pregunta de ingeniería no es ¿parece humano? sino ¿Qué tan bien resuelve esta tarea, con que costo y con que tipo de errores?
+_____________________________________________________
+
+#### **ACTIVIDAD_1.2**
+# **CASOS DE USO DE ZABBIX**
+
+- ==MONITOREO DE INFRAESTRUCTURA DE TI==
+
+¿Qué monitorea?
+Servidores, redes, conexiones, nube y centros de datos
+
+¿Para que sirve?
+Detectar fallas y evitar que los servicios queden fuera de línea.
+
+
+-  ==MONITOREO DE TIENDAS Y PUNTOS DE VENTA==
+
+¿Qué monitorea?
+Sistemas de cajas, puntos de venta (PDV), aplicaciones y servicios
+
+¿Para que sirve?
+Garantizar que las tiendas puedan realizar ventas correctamente.
+
+
+- ==MONITOREO DEL E-COMMERCE==
+¿Qué monitorea?
+Página web, aplicación móvil, APIs, tráfico y servicios
+
+¿Para que sirve?
+Detectar problemas que afecten las compras en línea y la experiencia del cliente.
+
+
+- ==MONITOREO DE INVENTARIO Y CENTROS DE DISTRIBUCION==
+¿Qué monitorea?
+Stock, operaciones de distribución y cadena de suministro
+
+¿Para que sirve?
+Tener información en tiempo real para evitar problemas de abastecimiento y mejorar la operación.
+
+
+- ==DETECCION Y REPUESTA AUTOMATICA A INCIDENTES==
+¿Qué monitorea?
+Eventos, anomalías y disponibilidad de servicios
+
+¿Para que sirve?
+Detectar problemas, generar alertas y, mediante reglas, ejecutar acciones de **autorremediación** sin intervención humana.
+_____________________________________________________
+#### **ACTIVIDAD_1.3**
 # ==**¿Qué es un sistema inteligente?**==
 
 Entidad que percibe en su entrono mediante sensores y actúa sobre ese entorno mediante actuadores, seleccionando en cada momento la acciona de máxima medida de desempeño, dado a lo que ha percibido hasta ese punto y el conocimiento con el que cuenta.
@@ -93,3 +164,18 @@ Los sistemas inteligentes son importantes porque permiten **automatizar tareas, 
     
 3. **ResearchGate — ¿Qué es un sistema inteligente?**  
     [https://www.researchgate.net/publication/413834408_Que_es_un_sistema_inteligente](https://www.researchgate.net/publication/413834408_Que_es_un_sistema_inteligente)
+
+_____________________________________________________
+#### **TAREA_1.3**
+
+LEY DE MOORE - DEFINICION - LINEA DE TIEMPO
+
+https://app.diagrams.net/#G10YbixPbYElIcI2XhDq6uaoOUSc_h0dX9#%7B%22pageId%22%3A%22Mn8oBAxICrWzuJv8hMUB%22%7D
+
+
+_____________________________________________________
+
+
+
+#### **ACTIVIDAD_1.4**
+

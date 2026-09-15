@@ -1,3 +1,0 @@
-LEY DE MOORE - DEFINICION - LINEA DE TIEMPO
-
-https://app.diagrams.net/#G10YbixPbYElIcI2XhDq6uaoOUSc_h0dX9#%7B%22pageId%22%3A%22Mn8oBAxICrWzuJv8hMUB%22%7D
