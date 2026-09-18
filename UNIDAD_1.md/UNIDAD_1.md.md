@@ -177,5 +177,137 @@ _____________________________________________________
 
 
 
-#### **ACTIVIDAD_1.4**
+### **ACTIVIDAD_1.4**
 
+### BASADOS EN REGLAS Y CONOCIMIENTOS
+
+##### **-==APRENDIZAJE AUTOMATICO  (MACHINE LEARNING)==**
+El sistema induce su función de decisión a partir de datos de ejemplo, en vez de que un humano le escriba regla por regla.
+Tres formas principales: Supervisando, no supervisando, por esfuerzo.
+
+**HERRAMIENTAS:**
+Tensor flow
+Pytorch
+
+##### **==- REDES NEURONALES Y APRENDIZAJE PROFUNDO==**
+Modelo compuesto por capas de unidades intercaladas que aprenden representaciones cada vez mas abstractas de datos.
+
+#### Herramientas de Software
+El ecosistema se basa casi por completo en **Python**.
+##### Frameworks principales
+- **PyTorch**: Estándar en investigación. Grafos dinámicos, muy flexible.
+- **TensorFlow**: Desarrollado por Google. Robusto para producción.
+- **Keras**: API de alto nivel sobre TensorFlow. Ideal para principiantes.
+##### Librerías de soporte
+- **NumPy / Pandas**: Manipulación de datos y operaciones numéricas.
+- **Matplotlib / Seaborn**: Visualización de métricas (pérdida, precisión).
+- **Scikit-learn**: Métricas de evaluación y ML tradicional.
+- **OpenCV**: Procesamiento de imágenes.
+---
+##### Hardware y RAM
+El hardware está dominado por **GPU NVIDIA** (aceleración vía CUDA).
+##### Consumo de RAM según la tarea
+| Tarea | Requisito aproximado |
+|---|---|
+| **Entrenamiento (LLMs)** | ~6× el tamaño de los pesos en VRAM |
+| **Inferencia (uso)** | 4–8 GB RAM (CPU) o 6–16 GB VRAM (GPU) |
+| **Edge (Jetson Nano)** | 4 GB RAM LPDDR4 |
+##### Ejemplos prácticos
+- **RoBERTa-Large (entrenamiento)**: ~12.3 GB VRAM + ~8.8 GB RAM del sistema.
+- **Instancia cloud (8× A100)**: 1,152 GiB RAM + 320 GB VRAM total.
+- **Modelo de 1,000M parámetros (fp32)**: ~24 GB VRAM solo para entrenar.
+---
+##### Resumen rápido
+- **Software**: Python + PyTorch/TensorFlow.
+- **Entrenar modelos grandes**: GPU potente con mucha VRAM (24 GB+).
+- **Usar modelos ya entrenados**: 8–16 GB RAM suele bastar.
+
+#### **==- SISTEMAS DIFUSOS (FUZZY LOGIC)==**
+Sistema que maneja grados de pertenencia entre 0 y 1, en vez de una logica estrictamente verdadero/falso.
+
+##### IA: Redes Neuronales y Sistemas Difusos
+
+##### Redes Neuronales y Deep Learning
+
+**Software**: Python + PyTorch / TensorFlow / Keras.
+**Librerías de apoyo**: NumPy, Pandas, Matplotlib, Scikit-learn, OpenCV.
+**Hardware**: GPU NVIDIA (CUDA).
+
+**RAM según tarea**:
+- Entrenar LLMs: ~6× el tamaño de los pesos en VRAM.
+- Inferir (usar modelo): 4–8 GB RAM (CPU) o 6–16 GB VRAM.
+- Modelo de 1,000M parámetros: ~24 GB VRAM para entrenar.
+
+**Regla rápida**:
+- Entrenar modelos grandes → GPU con 24 GB+ VRAM.
+- Usar modelos ya entrenados → 8–16 GB RAM basta.
+
+---
+
+##### Sistemas Difusos (Fuzzy Logic)
+
+**Librerías**:
+- fuzzylite (C++), FuzzyLogic.jl (Julia), Simpful (Python).
+
+**Con interfaz gráfica**:
+- FuzzyWise, UPAFuzzySystems, Xfuzzy 3.0.
+
+**Otros lenguajes**: lfl (R), JFML/Juzzy (Java), FuzzyKit (Swift).
+**Especializadas**: pyFTS (series temporales), PyIT2FLS (Tipo-2).
+
+**RAM**: mucho más ligeras que deep learning. Sin datos específicos.
+
+---
+
+##### Diferencia clave
+
+| | Redes Neuronales | Sistemas Difusos |
+|---|---|---|
+| **Enfoque** | Aprende de datos | Reglas expertas |
+| **Hardware** | GPU potente | CPU normal |
+| **RAM** | Alta (GB) | Baja (MB) |
+| **Cuándo usar** | Patrones complejos | Razonamiento impreciso |
+
+
+##### **==- ALGORITMOS GENETICOS Y COMPUTACION EVOLUTIVA==**
+
+Método de búsqueda que evoluciona una población de soluciones candidatas mediante selección, cruce y mutación, imitando la selección natural.
+
+##### Herramientas
+**Python**: DEAP, PyGAD, PyGenAlgo, Pyrimidine, pymoo.
+**R**: xega.
+##### RAM y Hardware
+- GA mantiene **toda una población en RAM** (a diferencia de simulated annealing).
+- Consumo depende de: **tamaño de población** y **complejidad del problema**.
+- GA simple: ~4–5 GB.
+- Programación genética: 32 MB–32 GB según escala.
+- **CPU paralela** (islas, master-slave). GPU solo si el fitness es costoso.
+##### Diferencia clave
+| | GA | Simulated Annealing |
+|---|---|---|
+| **Memoria** | Alta (población) | Baja (un individuo) |
+| **Paralelización** | Natural | Difícil |
+
+##### **==RAZONAMIENTO BASADO EN CASOS (CASE-BASED REASONING)==**
+
+Resuelve un problema nuevo recuperando el caso mas parecido ya resuelto y adaptando la solución.
+
+##### Herramientas
+- **Python**: CBRkit, CaBRNet.
+- **Java**: jColibri / jColibri2.
+- **Con GUI**: myCBR 3 (sobre Protégé).
+- **C++**: CBR*Tools.
+##### RAM y Hardware
+- **Muy ligero**: 128 MB de SDRAM en sistemas antiguos.
+- CPU estándar. Sin GPU.
+- Mucho más liviano que deep learning.
+##### Resumen
+| Lenguaje | Herramienta |
+|---|---|
+| Python | CBRkit, CaBRNet |
+| Java | jColibri2 |
+| GUI | myCBR 3 |
+| C++ | CBR*Tools |
+
+10 casos con estas herramientas
+(algo que se aplico, alguna area de trabajo, buscar en google academico, que se resolvio con cada articulo)
