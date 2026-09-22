@@ -311,3 +311,54 @@ Resuelve un problema nuevo recuperando el caso mas parecido ya resuelto y adapta
 
 10 casos con estas herramientas
 (algo que se aplico, alguna area de trabajo, buscar en google academico, que se resolvio con cada articulo)
+
+-----
+
+### ACTIVIDAD_1.5
+
+#### MACHINE LEARNING
+
+
+SUBIR DOS EJEMPLOS EXTRA DE APLICACIONES DONDE SE MUESTRE T,E,P TAREA EXPERIENCIA Y MEDICION
+
+
+##  Cajero Automático (ATM)
+
+|Tarea|Experiencia|Medición|
+|---|---|---|
+|Retirar dinero, consultar saldo, transferir|Seguridad, rapidez, facilidad|Tiempo de transacción, reintentos, errores|
+
+---
+
+##  Gestión Hospitalaria
+
+|Tarea|Experiencia|Medición|
+|---|---|---|
+|Registrar paciente, asignar cita, actualizar historia|Confianza, menos estrés, menor carga cognitiva|Tiempo de registro, errores de digitación, pacientes/hora|
+
+---
+
+##  Videojuego de Acción
+
+|Tarea|Experiencia|Medición|
+|---|---|---|
+|Completar misión, eliminar enemigos, alcanzar objetivo|Diversión, inmersión, reto equilibrado|Puntuación, tiempo de misión, muertes, abandono|
+
+---
+
+
+
+### ACTIVIDAD 2.2
+
+ESTUDIAR LOS TRES ARTEFACTOS Y ESCRIBIR CON SUS PROPIAS PALABRAS EN QUE CONSISTEN CADA UNA DE LAS TRES CLASIFIACIONES
+
+SUPERVISANDO:
+Se supone que entiende por medio de una respuesta ya sea por la persona que lo esta utilizando ayuda a separar los datos ya sean clases y tambien las coloca de manera clasificada.
+
+
+SIN SUPERVISAR:
+Aqui no tiene etiquetas o maneras de conocer lo que se realiza ya que el sistema no esta siendo supervisado donde el cliente tiene que entrar en esta seccion para agrupar 
+
+
+POR ESFUERZO:
+Aqui nadie le dice cual es la accion correcta que se realiza pero basandose a eso se ajustan los valores ya sean internos o los necesarios.
