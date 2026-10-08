@@ -85,3 +85,26 @@ Falso negativo: Es un resultado de una prueba o diagnostico que indica de forma 
 | SVM                           | Busca el hiperplano que separa las clases con el mayor margen.               | Usa kernels para proyectar datos no separables a mayor dimensión y encontrar la separación óptima.                                             | Clasificación de textos e imágenes, incluyendo bioinformática y detección de objetos en imágenes                                                         |
 | BOSQUE ALEATORIO              | Conjunto de árboles de decisión que votan la predicción final.               | Cada árbol se entrena con muestras y features aleatorios; al predecir votan o promedian.                                                       | Predecir si un atleta ganará una medalla olímpica analizando múltiples variables de rendimiento deportivo                                                |
 | RED NEURONAL                  | Modelo de capas de neuronas artificiales interconectadas.                    | Propaga datos hacia adelante con funciones de activación y ajusta pesos con retropropagación.                                                  | Reconocimiento de voz en asistentes como Google Voice o Siri, y análisis de imágenes médicas para detección de tumores                                   |
+
+----
+# ==**Act_2.5 Arquitectura==**
+
+Front
+Bootstrop-Material Desing
+
+Backend         Modelo 
+Django           Machine Learning- Redes Neuronales
+
+API
+Django
+
+BD
+Posgresql
+
+# Algortimos de Machine Learning
+
+Arbol de desicion 
+
+
+
+
