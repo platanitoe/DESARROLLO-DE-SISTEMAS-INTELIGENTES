@@ -72,3 +72,32 @@ Medida del número de nodos generados o expandidos por un algoritmo durante el p
 **COMPLEJIDAD EN ESPACIO**  
 Medida de la cantidad máxima de nodos que un algoritmo debe almacenar en memoria durante el proceso de búsqueda.
 
+#### **ACTIVIDAD DE CLASE**
+
+
+![[Captura de pantalla 2026-10-08 181017.png|366]]![[Captura de pantalla 2026-10-08 182003.png|366]]
+![[Captura de pantalla 2026-10-08 182431.png|368]]
+![[Captura de pantalla 2026-10-08 182619.png|370]]
+
+## Imagen 1 
+
+**Observación**: El camino amarillo es muy irregular y en zigzag, baja por la parte inferior izquierda y rodea varios obstáculos antes de llegar a la meta. Esto ocurre porque Best-First-Search solo usa la heurística h(n) (sin costo acumulado g(n)), por lo que no garantiza optimalidad y toma decisiones "miopes" que producen rutas largas y torcidas.
+
+---
+
+## Imagen 2 
+
+**Observación**: La búsqueda se lanza desde ambos extremos (inicio y meta) al mismo tiempo (bi-directional), y las dos fronteras se encuentran. El camino resultante es mucho más directo y limpio que en la imagen 1, atravesando la parte central. Sin embargo, sigue siendo una ruta no óptima garantizada, solo "buena" según la heurística.
+
+---
+
+## Imagen 3 
+
+
+**Observación**: El camino es más ordenado y eficiente que en Best-First-Search. A* expande menos nodos (más celestes concentrados alrededor del camino) porque equilibra el costo real recorrido con la estimación hacia la meta. Aun así, el uso de Manhattan con diagonales no es ideal (debería usarse Octile), por lo que el camino no es perfectamente óptimo.
+
+---
+
+## Imagen 4 
+
+**Observación**: Mapa más pequeño y simétrico. El camino amarillo rodea elegantemente el obstáculo central en forma de cruz. Se nota la expansión bidireccional: la frontera verde claro se extiende desde ambos lados hasta encontrarse. El resultado es visualmente limpio, pero Best-First-Search no garantiza optimalidad; simplemente encuentra una solución razonable rápido.
