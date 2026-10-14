@@ -72,7 +72,8 @@ Medida del número de nodos generados o expandidos por un algoritmo durante el p
 **COMPLEJIDAD EN ESPACIO**  
 Medida de la cantidad máxima de nodos que un algoritmo debe almacenar en memoria durante el proceso de búsqueda.
 
-#### **ACTIVIDAD DE CLASE**
+#### **ACTIVIDAD DE CLASE  TAREA_3.1**
+
 
 
 ![[Captura de pantalla 2026-10-08 181017.png|366]]![[Captura de pantalla 2026-10-08 182003.png|366]]
@@ -101,3 +102,98 @@ Medida de la cantidad máxima de nodos que un algoritmo debe almacenar en memori
 ## Imagen 4 
 
 **Observación**: Mapa más pequeño y simétrico. El camino amarillo rodea elegantemente el obstáculo central en forma de cruz. Se nota la expansión bidireccional: la frontera verde claro se extiende desde ambos lados hasta encontrarse. El resultado es visualmente limpio, pero Best-First-Search no garantiza optimalidad; simplemente encuentra una solución razonable rápido.
+
+---
+
+14/10/2026
+## EL PROBLEMA DE LA BÚSQUEDA CIEGA
+
+> [!info] Descripción
+> La búsqueda ciega explora el espacio de estados **sin usar información** sobre qué tan cerca está de la meta. Prueba caminos uno por uno (como BFS o DFS), pero no sabe si va bien o mal. Por eso puede perder mucho tiempo explorando zonas inútiles.
+
+---
+
+### ¿QUÉ ES UNA HEURÍSTICA?
+
+> [!info] Descripción
+> Una heurística es una **"pista" o estimación** que ayuda a decidir qué camino parece más prometedor. No garantiza la solución óptima por sí sola, pero guía la búsqueda hacia la meta de forma más inteligente y rápida.
+
+---
+
+### **LA PISTA: DISTANCIA DE MANHATTAN**
+
+> [!note] Descripción
+> Es una forma de medir cuánto falta para llegar a la meta en una cuadrícula, contando **solo movimientos horizontales y verticales** (sin diagonales). Es como calcular la distancia caminando por las calles de una ciudad cuadriculada.
+
+---
+
+### **TRES NÚMEROS PARA CADA CASILLA**
+
+> [!abstract] Descripción
+> Cada casilla del tablero guarda **tres valores** que resumen su situación en la búsqueda:
+> - **g:** lo que ya costó llegar hasta aquí.
+> - **h:** lo que se estima que falta para la meta.
+> - **f = g + h:** el costo total estimado del camino que pasa por esta casilla.
+
+---
+
+### g:
+
+> [!example] Descripción
+> **Costo real acumulado** desde el inicio hasta la casilla actual. Es un dato objetivo, no una estimación.
+
+### h:
+
+> [!example] Descripción
+> **Heurística:** estimación del costo que falta desde esta casilla hasta la meta. Es subjetiva (depende de la heurística elegida).
+
+### f = g + h:
+
+> [!example] Descripción
+> **Costo total estimado** si se pasa por esta casilla. Es el número que usa el algoritmo **A\*** para decidir qué casilla explorar primero: siempre elige la de menor **f**.
+
+
+## **ACTIVIDAD_3.2**
+
+. COMPARA EN LA PAGINA DOS ALGORITMOS (A*) Y UN CIEGO. CONTESTAR LAS SIGUIENTES PREGUNTAS
+
+---
+
+## ¿Qué longitud tiene cada algoritmo?
+
+> [!question] Respuesta
+> Los tres algoritmos encuentran **exactamente la misma longitud**, porque todos garantizan el camino más corto en una cuadrícula sin pesos.
+>
+> - **A\***: longitud óptima
+> - **BFS**: longitud óptima
+> - **Dijkstra**: longitud óptima
+>
+> La longitud **no es la diferencia clave** entre ellos. La diferencia está en **cómo llegan** a esa longitud.
+
+---
+
+## ¿Cuánto tiempo tardó cada algoritmo?
+
+> [!question] Respuesta
+> Aquí sí hay diferencias notables:
+>
+> - **A\***: el **más rápido**. La heurística Manhattan lo guía directo hacia la meta.
+> - **BFS**: **tiempo intermedio**. Explora por capas, como una onda desde el inicio.
+> - **Dijkstra**: el **más lento**. Sin pista, explora casi todo el mapa antes de encontrar la meta.
+>
+> El tiempo depende también de **cuántos obstáculos** haya y de **qué tan lejos** esté la meta.
+
+---
+
+## ¿Qué diferencia observas?
+
+## ¿Qué diferencia observas?
+
+> [!abstract] Respuesta
+> La diferencia fundamental es **el uso o no de una heurística**.
+>
+> **A\*** sí usa heurística (distancia de Manhattan), por eso garantiza el camino óptimo visitando **pocos nodos** y con **velocidad alta**. Su exploración está **dirigida hacia la meta**.
+>
+> **BFS** no usa heurística, pero sí garantiza el camino óptimo. Visita **muchos nodos** y su velocidad es **media**. Explora **por capas, como una onda** que se expande desde el inicio.
+>
+> **Dijkstra** tampoco usa heurística y también garantiza el camino óptimo. Es el que visita **más nodos** y tiene **velocidad baja**, porque explora **en todas las direcciones según el costo**.
